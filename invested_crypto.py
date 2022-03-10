@@ -1,7 +1,14 @@
 from operator import index
 import requests
 import json
+import os
 
+coinmarket_api_key = os.environ['coinmarket_api_key']
+coinmarket_secret_key = os.environ['coinmarket_secret_key']
+
+key = {"api_key": coinmarket_api_key }
+headers = { "secret_key": coinmarket_secret_key,
+  "api_key": key['api_key']}
 
 base_url = 'https://pro-api.coinmarketcap.com'
 
