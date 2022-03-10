@@ -2,10 +2,6 @@ from operator import index
 import requests
 import json
 
-key = {"api_key": "93663a29-1493-4313-8dab-1c3551f2ff23"}
-keys = "93663a29-1493-4313-8dab-1c3551f2ff23"
-headers = { "secret_key": "mEUH33CJWq9h6RP1a0gEOpUDZ2pAT5LQFJORJhw1hwKaH9GjbrtJsDTKnjCQLxQ8",
-  "api_key": key['api_key']}
 
 base_url = 'https://pro-api.coinmarketcap.com'
 
