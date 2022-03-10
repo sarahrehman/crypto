@@ -1,11 +1,15 @@
 import requests
 import json
 import pprint
+import os
 
-key = {"api_key": "93663a29-1493-4313-8dab-1c3551f2ff23"}
-keys = "93663a29-1493-4313-8dab-1c3551f2ff23"
-headers = { "secret_key": "mEUH33CJWq9h6RP1a0gEOpUDZ2pAT5LQFJORJhw1hwKaH9GjbrtJsDTKnjCQLxQ8",
+coinmarket_api_key = os.environ['coinmarket_api_key']
+coinmarket_secret_key = os.environ['coinmarket_secret_key']
+
+key = {"api_key": coinmarket_api_key }
+headers = { "secret_key": coinmarket_secret_key,
   "api_key": key['api_key']}
+
 
 base_url = 'https://pro-api.coinmarketcap.com'
 
